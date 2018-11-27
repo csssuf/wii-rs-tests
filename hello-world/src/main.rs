@@ -1,4 +1,4 @@
-#![feature(naked_functions, start)]
+#![feature(naked_functions)]
 
 #![no_std]
 #![no_main]
