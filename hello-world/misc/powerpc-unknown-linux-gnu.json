@@ -1,0 +1,29 @@
+{
+  "arch": "powerpc",
+  "data-layout": "E-m:e-p:32:32-i64:64-n32",
+  "dynamic-linking": true,
+  "env": "gnu",
+  "executables": true,
+  "has-elf-tls": true,
+  "has-rpath": true,
+  "is-builtin": true,
+  "linker-flavor": "gcc",
+  "linker-is-gnu": true,
+  "llvm-target": "powerpc-unknown-linux-gnu",
+  "max-atomic-width": 32,
+  "os": "linux",
+  "position-independent-executables": true,
+  "pre-link-args": {
+    "gcc": [
+      "-Wl,--as-needed",
+      "-Wl,-z,noexecstack",
+      "-m32"
+    ]
+  },
+  "relro-level": "full",
+  "target-c-int-width": "32",
+  "target-endian": "big",
+  "target-family": "unix",
+  "target-pointer-width": "32",
+  "vendor": "unknown"
+}

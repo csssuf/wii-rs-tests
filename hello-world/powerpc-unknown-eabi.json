@@ -1,0 +1,22 @@
+{
+  "arch": "powerpc",
+  "crt-static-default": true,
+  "data-layout": "E-m:e-p:32:32-i64:64-n32",
+  "env": "",
+  "executables": true,
+  "has-rpath": true,
+  "linker-flavor": "gcc",
+  "linker-is-gnu": true,
+  "llvm-target": "powerpc-unknown-eabi",
+  "os": "none",
+  "pre-link-args": {
+    "gcc": [
+      "-Wl,--as-needed",
+      "-m32"
+    ]
+  },
+  "target-c-int-width": "32",
+  "target-endian": "big",
+  "target-pointer-width": "32",
+  "vendor": "unknown"
+}
