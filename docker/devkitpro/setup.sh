@@ -13,7 +13,7 @@ EOF
 
 pacman --noconfirm -U https://downloads.devkitpro.org/devkitpro-keyring-r1.787e015-2-any.pkg.tar.xz
 pacman --noconfirm -Syu
-pacman --noconfirm -S wii-dev gamecube-dev
+pacman --noconfirm -S wii-dev gamecube-dev make
 
 cat >> /etc/bash.bashrc << "EOF"
 source /etc/profile.d/devkit-env.sh
