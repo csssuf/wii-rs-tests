@@ -1,11 +1,10 @@
+#![feature(naked_functions, start)]
+
 #![no_std]
+#![no_main]
 
-use core::panic::PanicInfo;
-
-#[panic_handler]
-fn panic(_info: &PanicInfo) -> ! {
-    loop {}
-}
+mod crt;
+mod panic;
 
 #[no_mangle]
 fn main() {
