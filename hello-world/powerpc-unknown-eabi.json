@@ -10,6 +10,17 @@
   "linker-is-gnu": false,
   "llvm-target": "powerpc-unknown-eabi",
   "os": "none",
+  "pre-link-args": {
+      "ld.lld": [
+          "-Trvl.ld",
+          "--start-group",
+          "-lm",
+          "-ldb",
+          "-lsysbase",
+          "-lc",
+          "--end-group"
+      ]
+  },
   "target-c-int-width": "32",
   "target-endian": "big",
   "target-pointer-width": "32",
